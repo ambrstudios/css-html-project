@@ -1,6 +1,5 @@
 #node stuff
 node_modules/
-package*
 
 #config
 .eslint*
