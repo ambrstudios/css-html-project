@@ -18,5 +18,10 @@
   "homepage": "https://github.com/chiq2045/css-html-project#readme",
   "devDependencies": {
     "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
   }
 }
