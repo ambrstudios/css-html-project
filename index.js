@@ -1,7 +1,9 @@
 const Koa = require('koa');
 const serve = require('koa-static');
 
-const app = new Koa();
+const css = new Koa();
 
-app.use(serve('src'));
-app.listen(1338);
+css.use(serve(__dirname + '/src'));
+css.listen(1340);
+
+module.exports = css;
