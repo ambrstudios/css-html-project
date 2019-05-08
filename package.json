@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/chiq2045/css-html-project#readme",
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
   },
   "dependencies": {
     "koa": "^2.7.0",
