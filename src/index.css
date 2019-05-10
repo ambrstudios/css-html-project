@@ -1,0 +1,62 @@
+body {
+  background-color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo search user'
+    'logo nav   nav'
+    'main main   main';
+  grid-gap: 20px;
+  background-color: white;
+  /* padding: 20px; */
+}
+
+.grid-container > div {
+  /* padding: 10px 0; */
+  font-size: 15px;
+  color: grey;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.search {
+  grid-area: search;
+}
+
+.user {
+  grid-area: user;
+}
+
+.main {
+  grid-area: main;
+  position: relative;
+  width: 100%;
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+}
+
+.main .btn-grp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* background-color: #555; */
+  /* color: white; */
+  /* font-size: 16px; */
+  /* padding: 12px 24px; */
+  /* border: none; */
+  /* cursor: pointer; */
+  /* border-radius: 5px; */
+}

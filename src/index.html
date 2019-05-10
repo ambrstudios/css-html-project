@@ -11,10 +11,102 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/css/index.css" />
     <title>CSS/HTML Project</title>
-  </head>
-  <body>
+    <script type="text/javascript">
+      function displayNextImage() {
+        x = x === images.length - 1 ? 0 : x + 1;
+        document.getElementById('scotland').src = images[x];
+      }
 
+      function displayPreviousImage() {
+        x = x <= 0 ? images.length - 1 : x - 1;
+        document.getElementById('scotland').src = images[x];
+      }
+
+      var images = [],
+        x = -1;
+      images[0] = 'https://via.placeholder.com/100'
+      images[1] = 'https://via.placeholder.com/150'
+      images[2] = 'https://via.placeholder.com/200'
+      images[3] = 'https://via.placeholder.com/250'
+    </script>
+  </head>
+  <body onload="changeImage()">
+    <div class="grid-container">
+      <div class="logo">
+        <img
+          src="https://cdn.pixabay.com/photo/2017/07/10/19/42/logo-2491236_1280.png"
+          alt="logo"
+          class="img-thumbnail"
+          width="100px"
+        />
+      </div>
+
+      <div class="search">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="searchText"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="searchBtn"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <button type="button" class="btn btn-secondary">
+              Home
+            </button>
+            <button type="button" class="btn btn-secondary">
+              Origins
+            </button>
+            <button type="button" class="btn btn-secondary">
+              Aim of Page
+            </button>
+            <button type="button" class="btn btn-secondary">
+              Resources
+            </button>
+          </form>
+        </nav>
+      </div>
+
+      <div class="main">
+        <img
+          id="scotland"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Loch_Lomond%2C_looking_south_from_Ben_Lomond.jpg"
+          alt="scotland"
+          class="img-thumbnail"
+        />
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            onclick="displayPreviousImage()"
+          >
+            Previous
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            onclick="displayNextImage()"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
