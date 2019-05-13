@@ -15,7 +15,7 @@
     <title>CSS/HTML Project</title>
   </head>
   <body>
-    <div class="center grid-container">
+    <header class="center grid-container">
       <div class="logo">
         <a href="/css">
           <img
@@ -25,6 +25,7 @@
             width="100px"
           />
         </a>
+        <h1>Home</h1>
       </div>
 
       <div class="search">
@@ -40,7 +41,7 @@
             <div class="input-group-append">
               <button
                 class="btn btn-outline-secondary"
-                type="button"
+                type="submit"
                 id="searchBtn"
                 method="post"
                 action=""
@@ -52,51 +53,75 @@
         </form>
       </div>
 
-      <div class="nav">
-        <nav class="navbar navbar-light bg-light">
-          <a href="/css" class="button btn btn-secondary">Home</a>
-          <a href="/css/pages/lomond" class="button btn btn-secondary"
-            >Lochs and Bens</a
+      <nav class="nav navbar navbar-light bg-light">
+        <ul>
+          <li><a href="/css" class="button btn btn-secondary">Home</a></li>
+          <li>
+            <a href="/css/pages/lomond" class="button btn btn-secondary"
+              >Lochs and Bens</a
+            >
+          </li>
+          <li>
+            <a
+              href="/css/pages/airshyre"
+              class="button btn btn-secondary active"
+              >Airshyre</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/hairmyres" class="button btn btn-secondary"
+              >East Kilbride</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/kenya" class="button btn btn-secondary"
+              >Kenya</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/contact" class="button btn btn-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="card" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="/css/images/brig_o_doon.jpeg"
+          alt="Card image cap"
+        />
+        <section class="card-body">
+          <h5 class="card-title">The Brig O' Doon</h5>
+          <p class="card-text">
+            This bridge is iconic in Scottish folklore because of one of the
+            greatest works of Robbie Burns, the Scottish Poet. His poem, Tam O'
+            Shanter, recounts the tale of a foolish man who tries to outrun a
+            ghoulish army to cross over the river Doon, as ghouls do not cross
+            over water.
+          </p>
+          <p class="card-text">
+            Having lived near his home and walked by the bridge itself, I can
+            attest to the significance of the place, but the beauty is something
+            that the photographer certainly brought to life.
+          </p>
+          <a
+            href="http://www.robertburns.org.uk/Assets/Poems_Songs/tamoshanter.htm"
+            class="btn btn-primary"
+            target="_blank"
+            >Learn More</a
           >
-          <a href="/css/pages/airshyre" class="button btn btn-secondary"
-            >Airshyre</a
+          <a
+            href="https://pixabay.com/photos/scotland-ayrshire-brig-o-doon-park-971913/"
+            class="btn btn-primary"
+            target="_blank"
+            >Image Origin</a
           >
-          <a href="/css/pages/hairmyres" class="button btn btn-secondary"
-            >East Kilbride</a
-          >
-          <a href="/css/pages/kenya" class="button btn btn-secondary"
-            >Kenya</a
-          >
-        </nav>
-      </div>
-
-      <div class="main">
-        <div class="card" style="width: 18rem;">
-          <img
-            class="card-img-top"
-            src="/css/images/brig_o_doon.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">The Brig O' Doon</h5>
-            <p class="card-text">
-              This bridge is iconic in Scottish folklore because of one of the
-              greatest works of Robbie Burns, the Scottish Poet. His poem, Tam
-              O' Shanter, recounts the tale of a foolish man who tries to outrun
-              a ghoulish army to cross over the river Doon, as ghouls do not
-              cross over water.
-            </p>
-            <p class="card-text">
-              Having lived near his home and walked by the bridge itself, I can
-              attest to the significance of the place, but the beauty is
-              something that the photographer certainly brought to life.
-            </p>
-            <a href="http://www.robertburns.org.uk/Assets/Poems_Songs/tamoshanter.htm" class="btn btn-primary" target="_blank">Learn More</a>
-			<a href="https://pixabay.com/photos/scotland-ayrshire-brig-o-doon-park-971913/" class="btn btn-primary" target="_blank">Image Origin</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        </section>
+      </article>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

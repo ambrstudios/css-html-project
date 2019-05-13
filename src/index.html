@@ -33,7 +33,7 @@
     </script>
   </head>
   <body>
-    <div class="grid-container">
+    <header class="grid-container">
       <div class="logo">
         <a href="/css">
           <img
@@ -43,6 +43,7 @@
             width="100px"
           />
         </a>
+        <h1>Home</h1>
       </div>
 
       <div class="search">
@@ -58,7 +59,7 @@
             <div class="input-group-append">
               <button
                 class="btn btn-outline-secondary"
-                type="button"
+                type="submit"
                 id="searchBtn"
                 method="post"
                 action=""
@@ -70,42 +71,60 @@
         </form>
       </div>
 
-      <div class="nav">
-        <nav class="navbar navbar-light bg-light">
-          <a href="/css" class="button btn btn-secondary">Home</a>
-          <a href="/css/pages/lomond" class="button btn btn-secondary"
-            >Lochs and Bens</a
-          >
-          <a href="/css/pages/airshyre" class="button btn btn-secondary"
-            >Airshyre</a
-          >
-          <a href="/css/pages/hairmyres" class="button btn btn-secondary"
-            >East Kilbride</a
-          >
-          <a href="/css/pages/kenya" class="button btn btn-secondary">Kenya</a>
-        </nav>
+      <nav class="nav navbar navbar-light bg-light">
+        <ul>
+          <li><a href="/css" class="button btn btn-secondary active">Home</a></li>
+          <li>
+            <a href="/css/pages/lomond" class="button btn btn-secondary"
+              >Lochs and Bens</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/airshyre" class="button btn btn-secondary"
+              >Airshyre</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/hairmyres" class="button btn btn-secondary"
+              >East Kilbride</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/kenya" class="button btn btn-secondary"
+              >Kenya</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/contact" class="button btn btn-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="clearfix" style="position:relative">
+		<center>
+      <img id="image" src="/css/images/lomond.jpeg" class="img-fluid" />
+      <div class="img-overlay" style="margin: 0 auto;">
+        <button
+          type="button"
+          class="btn btn-secondary clearfix"
+		  style="position:absolute; top:0; right:0;"
+          onclick="displayPreviousImage()"
+        >
+          Previous
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+		  style="position:absolute; top:0; left:0;"
+          onclick="displayNextImage()"
+        >
+          Next
+        </button>
       </div>
-
-      <div class="main">
-        <img id="image" src="/css/images/lomond.jpeg" class="img-responsive" />
-        <div class="img-overlay">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            onclick="displayPreviousImage()"
-          >
-            Previous
-          </button>
-          <button
-            type="button"
-            class="btn btn-secondary"
-            onclick="displayNextImage()"
-          >
-            Next
-          </button>
-        </div>
-      </div>
-    </div>
+	  </center>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

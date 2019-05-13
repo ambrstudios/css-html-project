@@ -7,6 +7,15 @@ body {
   /* margin: auto; */
 }
 
+ul {
+  list-style: none;
+  /* min-width: 700px; */
+}
+
+ul li {
+  display: inline;
+}
+
 .card {
   margin: 0 auto;
   float: none;
@@ -17,8 +26,7 @@ body {
   display: grid;
   grid-template-areas:
     'logo search search'
-    'logo nav nav'
-    'main main main';
+    'logo nav nav';
   grid-gap: 20px;
   background-color: white;
   /* padding: 20px; */
@@ -36,10 +44,12 @@ body {
 
 .nav {
   grid-area: nav;
+  width: 90vw;
 }
 
 .search {
   grid-area: search;
+  width: 90vw;
 }
 
 .user {
@@ -49,11 +59,10 @@ body {
 .main {
   grid-area: main;
   position: relative;
+  width: 100vw;
 }
 
 .main img {
-  width: 100%;
-  height: auto;
 }
 
 .img-overlay {

@@ -15,7 +15,7 @@
     <title>CSS/HTML Project</title>
   </head>
   <body>
-    <div class="center grid-container">
+    <header class="center grid-container">
       <div class="logo">
         <a href="/css">
           <img
@@ -40,7 +40,7 @@
             <div class="input-group-append">
               <button
                 class="btn btn-outline-secondary"
-                type="button"
+                type="submit"
                 id="searchBtn"
                 method="post"
                 action=""
@@ -52,60 +52,75 @@
         </form>
       </div>
 
-      <div class="nav">
-        <nav class="navbar navbar-light bg-light">
-          <a href="/css" class="button btn btn-secondary">Home</a>
-          <a href="/css/pages/lomond" class="button btn btn-secondary"
-            >Lochs and Bens</a
-          >
-          <a href="/css/pages/airshyre" class="button btn btn-secondary"
-            >Airshyre</a
-          >
-          <a href="/css/pages/hairmyres" class="button btn btn-secondary"
-            >East Kilbride</a
-          >
-          <a href="/css/pages/kenya" class="button btn btn-secondary">Kenya</a>
-        </nav>
-      </div>
+      <nav class="nav navbar navbar-light bg-light">
+        <ul>
+          <li><a href="/css" class="button btn btn-secondary">Home</a></li>
+          <li>
+            <a href="/css/pages/lomond" class="button btn btn-secondary"
+              >Lochs and Bens</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/airshyre" class="button btn btn-secondary"
+              >Airshyre</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/hairmyres" class="button btn btn-secondary active"
+              >East Kilbride</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/kenya" class="button btn btn-secondary"
+              >Kenya</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/contact" class="button btn btn-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="main">
-        <div class="card" style="width: 18rem;">
-          <img
-            class="card-img-top"
-            src="/css/images/hairmyres.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Hairmyres Hospital</h5>
-            <p class="card-text">
-              The reason we moved to Scotland is because my father is an
-              Orthopaedic surgeon. He was given the opportunity to continue his
-              studies in specialization there - a high honor.
-            </p>
-            <p class="card-text">
-              Hairmyres Hospital is the hospital that he spent the most time at,
-              and is therefore the one I know the most about. It was my home for
-              over 10 years.
-            </p>
-            <p class="card-text">
-              The unique coloring is something that I could never forget.
-            </p>
-            <a
-              href="https://en.m.wikipedia.org/wiki/Hairmyres"
-              class="btn btn-primary"
-              target="_blank"
-              >Learn More</a
-            >
-            <a
-              href="http://www.wikitour.io/travel-destinations/Hairmyres_Hospital"
-              class="btn btn-primary"
-              target="_blank"
-              >Image Origin</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
+    <main class="main">
+      <article class="card" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="/css/images/hairmyres.jpeg"
+          alt="Card image cap"
+        />
+        <section class="card-body">
+          <h5 class="card-title">Hairmyres Hospital</h5>
+          <p class="card-text">
+            The reason we moved to Scotland is because my father is an
+            Orthopaedic surgeon. He was given the opportunity to continue his
+            studies in specialization there - a high honor.
+          </p>
+          <p class="card-text">
+            Hairmyres Hospital is the hospital that he spent the most time at,
+            and is therefore the one I know the most about. It was my home for
+            over 10 years.
+          </p>
+          <p class="card-text">
+            The unique coloring is something that I could never forget.
+          </p>
+          <a
+            href="https://en.m.wikipedia.org/wiki/Hairmyres"
+            class="btn btn-primary"
+            target="_blank"
+            >Learn More</a
+          >
+          <a
+            href="http://www.wikitour.io/travel-destinations/Hairmyres_Hospital"
+            class="btn btn-primary"
+            target="_blank"
+            >Image Origin</a
+          >
+        </section>
+      </article>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

@@ -15,7 +15,7 @@
     <title>CSS/HTML Project</title>
   </head>
   <body>
-    <div class="center grid-container">
+    <header class="center grid-container">
       <div class="logo">
         <a href="/css">
           <img
@@ -40,7 +40,7 @@
             <div class="input-group-append">
               <button
                 class="btn btn-outline-secondary"
-                type="button"
+                type="submit"
                 id="searchBtn"
                 method="post"
                 action=""
@@ -52,49 +52,64 @@
         </form>
       </div>
 
-      <div class="nav">
-        <nav class="navbar navbar-light bg-light">
-          <a href="/css" class="button btn btn-secondary">Home</a>
-          <a href="/css/pages/lomond" class="button btn btn-secondary"
-            >Lochs and Bens</a
-          >
-          <a href="/css/pages/airshyre" class="button btn btn-secondary"
-            >Airshyre</a
-          >
-          <a href="/css/pages/hairmyres" class="button btn btn-secondary"
-            >East Kilbride</a
-          >
-          <a href="/css/pages/kenya" class="button btn btn-secondary">Kenya</a>
-        </nav>
-      </div>
-
-      <div class="main">
-        <div class="card" style="width: 18rem;">
-          <img
-            class="card-img-top"
-            src="/css/images/lomond.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Loch Lomond</h5>
-            <p class="card-text">
-              This is a picture of one of the more famous Scottish Lochs. In
-              Scotland, Lakes are called Lochs and Mountains are called Bens.
-              I'm not sure why that is the case.
-            </p>
-            <p class="card-text">
-              The best part about it is how close it was to home. We lived
-              around an hour South of the Loch.
-            </p>
-            <a
-              href="https://en.m.wikipedia.org/wiki/Loch_Lomond"
-              class="btn btn-primary"
-              >Learn More</a
+      <nav class="nav navbar navbar-light bg-light">
+        <ul>
+          <li><a href="/css" class="button btn btn-secondary">Home</a></li>
+          <li>
+            <a href="/css/pages/lomond" class="button btn btn-secondary active"
+              >Lochs and Bens</a
             >
-          </div>
-        </div>
-      </div>
-    </div>
+          </li>
+          <li>
+            <a href="/css/pages/airshyre"
+			   class="button btn btn-secondary"
+              >Airshyre</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/hairmyres" class="button btn btn-secondary"
+              >East Kilbride</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/kenya" class="button btn btn-secondary"
+              >Kenya</a
+            >
+          </li>
+          <li>
+            <a href="/css/pages/contact" class="button btn btn-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="card" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="/css/images/lomond.jpeg"
+          alt="Card image cap"
+        />
+        <section class="card-body">
+          <h5 class="card-title">Loch Lomond</h5>
+          <p class="card-text">
+            This is a picture of one of the more famous Scottish Lochs. In
+            Scotland, Lakes are called Lochs and Mountains are called Bens. I'm
+            not sure why that is the case.
+          </p>
+          <p class="card-text">
+            The best part about it is how close it was to home. We lived around
+            an hour South of the Loch.
+          </p>
+          <a
+            href="https://en.m.wikipedia.org/wiki/Loch_Lomond"
+            class="btn btn-primary"
+            >Learn More</a
+          >
+        </section>
+      </article>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

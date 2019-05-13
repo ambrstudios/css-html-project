@@ -71,49 +71,58 @@
             >
           </li>
           <li>
-            <a href="/css/pages/kenya" class="button btn btn-secondary active"
+            <a href="/css/pages/kenya" class="button btn btn-secondary"
               >Kenya</a
             >
           </li>
           <li>
-            <a href="/css/pages/contact" class="button btn btn-secondary"
+            <a href="/css/pages/contact" class="button btn btn-secondary active active"
               >Contact</a
             >
           </li>
         </ul>
       </nav>
     </header>
+
     <main class="main">
-      <article class="card" style="width: 18rem;">
-        <img
-          class="card-img-top"
-          src="/css/images/kisii.jpeg"
-          alt="Card image cap"
-        />
-        <section class="card-body">
-          <h5 class="card-title">Kisii</h5>
-          <p class="card-text">
-            I was born in Kenya and spent the first 8 years of my life there.
-            There are a number of things that I remember well, and my time in
-            Kisii is the most memorable.
-          </p>
-          <p class="card-text">
-            My Grandparents live there, and so do the grandparents of many of my
-            friends and families that are also of the Kisii Tribe.
-          </p>
-          <p class="card-text">
-            We moved to Scotland after that, but this church building has never
-            left my heart.
-          </p>
-          <a
-            href="https://commons.m.wikimedia.org/wiki/File:Kisii_Town,_Kenya.jpg"
-            class="btn btn-primary"
-            >Image Origin</a
-          >
-          <a href="https://www.kisii.go.ke" class="btn btn-primary"
-            >Learn More</a
-          >
-        </section>
+      <article>
+        <form action="" method="post">
+          <section class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Jon Doe"
+              aria-label="name"
+              aria-describedby="basic-addon1"
+            />
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Name</span>
+            </div>
+          </section>
+
+          <section class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="jon.doe@default.com"
+              aria-label="email"
+              aria-describedby="basic-addon1"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon1"
+                >Email Address</span
+              >
+            </div>
+          </section>
+
+          <section class="input-group">
+            <textarea class="form-control" aria-label="message"></textarea>
+            <div class="input-group-prepend">
+              <span class="input-group-text">Message</span>
+            </div>
+          </section>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </article>
     </main>
     <!-- Optional JavaScript -->
