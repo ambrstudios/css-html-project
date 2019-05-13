@@ -13,27 +13,9 @@
     />
     <link rel="stylesheet" href="/css/index.css" />
     <title>CSS/HTML Project</title>
-    <script type="text/javascript">
-      function displayNextImage() {
-        x = x === images.length - 1 ? 0 : x + 1;
-        document.getElementById('image').src = images[x];
-      }
-
-      function displayPreviousImage() {
-        x = x <= 0 ? images.length - 1 : x - 1;
-        document.getElementById('image').src = images[x];
-      }
-
-      var images = [],
-        x = -1;
-      images[0] = '/css/images/brig_o_doon.jpeg';
-      images[1] = '/css/images/central.jpeg';
-      images[2] = '/css/images/hairmyres.jpeg';
-      images[3] = '/css/images/lomond.jpeg';
-    </script>
   </head>
   <body>
-    <div class="grid-container">
+    <div class="center grid-container">
       <div class="logo">
         <img
           src="/css/images/logo.jpeg"
@@ -70,9 +52,7 @@
 
       <div class="nav">
         <nav class="navbar navbar-light bg-light">
-          <a href="/css" class="button btn btn-secondary"
-            >Home</a
-          >
+          <a href="/css" class="button btn btn-secondary">Home</a>
           <a href="/css/pages/lomond" class="button btn btn-secondary"
             >Lochs and Bens</a
           >
@@ -89,24 +69,30 @@
       </div>
 
       <div class="main">
-        <img id="image" src="/css/images/lomond.jpeg" class="img-responsive" />
-        <div class="img-overlay">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            onclick="displayPreviousImage()"
-          >
-            Previous
-          </button>
-          <button
-            type="button"
-            class="btn btn-secondary"
-            onclick="displayNextImage()"
-          >
-            Next
-          </button>
+        <div class="card" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="/css/images/brig_o_doon.jpeg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">The Brig O' Doon</h5>
+            <p class="card-text">
+              This bridge is iconic in Scottish folklore because of one of the
+              greatest works of Robbie Burns, the Scottish Poet. His poem, Tam
+              O' Shanter, recounts the tale of a foolish man who tries to outrun
+              a ghoulish army to cross over the river Doon, as ghouls do not
+              cross over water.
+            </p>
+            <p class="card-text">
+              Having lived near his home and walked by the bridge itself, I can
+              attest to the significance of the place, but the beauty is
+              something that the photographer certainly brought to life.
+            </p>
+            <a href="http://www.robertburns.org.uk/Assets/Poems_Songs/tamoshanter.htm" class="btn btn-primary" target="_blank">Learn More</a>
+			<a href="https://pixabay.com/photos/scotland-ayrshire-brig-o-doon-park-971913/" class="btn btn-primary" target="_blank">Image Origin</a>
+          </div>
         </div>
-
       </div>
     </div>
     <!-- Optional JavaScript -->

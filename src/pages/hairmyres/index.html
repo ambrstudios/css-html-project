@@ -13,27 +13,9 @@
     />
     <link rel="stylesheet" href="/css/index.css" />
     <title>CSS/HTML Project</title>
-    <script type="text/javascript">
-      function displayNextImage() {
-        x = x === images.length - 1 ? 0 : x + 1;
-        document.getElementById('image').src = images[x];
-      }
-
-      function displayPreviousImage() {
-        x = x <= 0 ? images.length - 1 : x - 1;
-        document.getElementById('image').src = images[x];
-      }
-
-      var images = [],
-        x = -1;
-      images[0] = '/css/images/brig_o_doon.jpeg';
-      images[1] = '/css/images/central.jpeg';
-      images[2] = '/css/images/hairmyres.jpeg';
-      images[3] = '/css/images/lomond.jpeg';
-    </script>
   </head>
   <body>
-    <div class="grid-container">
+    <div class="center grid-container">
       <div class="logo">
         <img
           src="/css/images/logo.jpeg"
@@ -70,9 +52,7 @@
 
       <div class="nav">
         <nav class="navbar navbar-light bg-light">
-          <a href="/css" class="button btn btn-secondary"
-            >Home</a
-          >
+          <a href="/css" class="button btn btn-secondary">Home</a>
           <a href="/css/pages/lomond" class="button btn btn-secondary"
             >Lochs and Bens</a
           >
@@ -89,24 +69,23 @@
       </div>
 
       <div class="main">
-        <img id="image" src="/css/images/lomond.jpeg" class="img-responsive" />
-        <div class="img-overlay">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            onclick="displayPreviousImage()"
-          >
-            Previous
-          </button>
-          <button
-            type="button"
-            class="btn btn-secondary"
-            onclick="displayNextImage()"
-          >
-            Next
-          </button>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/css/images/hairmyres.jpeg" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Hairmyres Hospital</h5>
+            <p class="card-text">
+			The reason we moved to Scotland is because my father is an Orthopaedic surgeon. He was given the opportunity to continue his studies in specialization there - a high honor.
+			</p>
+            <p class="card-text">
+			Hairmyres Hospital is the hospital that he spent the most time at, and is therefore the one I know the most about. It was my home for over 10 years.
+			</p>
+            <p class="card-text">
+			The unique coloring is something that I could never forget.
+			</p>
+            <a href="https://en.m.wikipedia.org/wiki/Hairmyres" class="btn btn-primary" target="_blank">Learn More</a>
+            <a href="http://www.wikitour.io/travel-destinations/Hairmyres_Hospital" class="btn btn-primary" target="_blank">Image Origin</a>
+          </div>
         </div>
-
       </div>
     </div>
     <!-- Optional JavaScript -->
